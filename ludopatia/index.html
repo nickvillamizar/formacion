@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Diagnóstico y Tratamiento de Ludopatía</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="scripts.js" defer></script>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="" alt="Logo de la Aplicación">
+            <h1>Diagnóstico y Tratamiento de Ludopatía</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#home">Inicio</a></li>
+                <li><a href="#diagnostico">Diagnóstico</a></li>
+                <li><a href="#plan">Plan de Tratamiento</a></li>
+                <li><a href="#progreso">Seguimiento</a></li>
+                <li><a href="#recursos">Recursos Educativos</a></li>
+                <li><a href="#profesionales">Profesionales</a></li>
+                <li><a href="#contacto">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Sección de bienvenida -->
+        <section id="home" class="hero">
+            <div class="overlay">
+                <h2>Recupera el control de tu vida</h2>
+                <p>Estamos aquí para ayudarte a superar la ludopatía. Realiza un diagnóstico hoy y comienza tu camino hacia la recuperación.</p>
+                <button onclick="location.href='#diagnostico'">Comenzar Diagnóstico</button>
+            </div>
+        </section>
+
+        <!-- Sección de Diagnóstico -->
+        <section id="diagnostico" class="diagnostico">
+            <h2>Diagnóstico de Ludopatía</h2>
+            <p>Responde las siguientes preguntas para determinar tu nivel de riesgo de ludopatía.</p>
+            <form id="diagnostico-form">
+                <label for="question1">¿Sientes la necesidad de apostar cada vez más dinero?</label>
+                <select id="question1">
+                    <option value="0">Nunca</option>
+                    <option value="1">A veces</option>
+                    <option value="2">Frecuentemente</option>
+                    <option value="3">Siempre</option>
+                </select>
+
+                <label for="question2">¿Has intentado dejar de apostar sin éxito?</label>
+                <select id="question2">
+                    <option value="0">Nunca</option>
+                    <option value="1">A veces</option>
+                    <option value="2">Frecuentemente</option>
+                    <option value="3">Siempre</option>
+                </select>
+
+                <button type="submit">Enviar Diagnóstico</button>
+            </form>
+            <div id="diagnostico-result"></div>
+        </section>
+
+        <!-- Sección del Plan de Tratamiento -->
+        <section id="plan" class="plan">
+            <h2>Tu Plan de Tratamiento Personalizado</h2>
+            <p>Basado en tu diagnóstico, este es tu plan de tratamiento:</p>
+            <ul>
+                <li>Sesiones semanales con un profesional especializado</li>
+                <li>Acceso a recursos educativos y videos interactivos</li>
+                <li>Seguimiento diario de tu progreso</li>
+                <li>Apoyo de la comunidad de recuperación</li>
+            </ul>
+            <button onclick="alert('Cita con tu psicólogo agendada exitosamente')">Agendar Cita</button>
+        </section>
+
+        <!-- Sección de Seguimiento -->
+        <section id="progreso" class="progreso">
+            <h2>Seguimiento de Progreso</h2>
+            <p>Monitorea tu avance hacia la recuperación.</p>
+            <div class="progress-bar">
+                <div class="progress" style="width: 60%;">60% Completado</div>
+            </div>
+        </section>
+
+        <!-- Sección de Recursos Educativos -->
+        <section id="recursos" class="recursos">
+            <h2>Recursos Educativos</h2>
+            <div class="resource-card">
+                <img src="images/Cómo superar la adicción al juego.mp4" alt="Video">
+                <h3>Video: Cómo superar la adicción al juego</h3>
+                <button>Ver Video</button>
+            </div>
+            <div class="resource-card">
+                <img src="article.jpg" alt="Artículo">
+                <h3>Artículo: Comprender los síntomas de la ludopatía</h3>
+                <button>Leer Artículo</button>
+            </div>
+        </section>
+
+        <!-- Sección de Profesionales -->
+        <section id="profesionales" class="profesionales">
+            <h2>Profesionales Especializados</h2>
+            <div class="professional-card">
+                <img src="profesional1.jpg" alt="Dr. Andrés Ramírez">
+                <h3>Dr. Andrés Ramírez</h3>
+                <p>Psicólogo clínico especializado en adicciones.</p>
+                <button>Contactar</button>
+            </div>
+            <div class="professional-card">
+                <img src="profesional2.jpg" alt="Dra. Laura González">
+                <h3>Dra. Laura González</h3>
+                <p>Terapeuta con enfoque en rehabilitación de comportamientos adictivos.</p>
+                <button>Contactar</button>
+            </div>
+        </section>
+
+        <!-- Sección de Contacto -->
+        <section id="contacto" class="contacto">
+            <h2>Contacto</h2>
+            <form id="contacto-form">
+                <label for="nombre">Nombre:</label>
+                <input type="text" id="nombre" required>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" required>
+
+                <label for="mensaje">Mensaje:</label>
+                <textarea id="mensaje" required></textarea>
+
+                <button type="submit">Enviar Mensaje</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Diagnóstico y Tratamiento de Ludopatía. Todos los derechos reservados.</p>
+    </footer>
+</body>
+</html>
+
+
